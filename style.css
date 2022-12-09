@@ -1,0 +1,46 @@
+:root {
+  --color1: rgb(247, 247, 247);
+  --color2: pink;
+  --color3: brown;
+  --color4: grey;
+  --font-family: "foreground";
+}
+
+@font-face {
+  font-family: "foreground";
+  src: url(./assets/fonts/foregroundfont.ttf);
+  font-family: "laBelle";
+  src: url(./assets/fonts/LaBelleAurore-Regular.ttf);
+  font-family: "cascadia";
+  src: url(./assets/fonts/cascadia/CascadiaMono.ttf);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/images/bg.jpg) center/cover;
+  height: 100vh;
+  font-family: "cascadia";
+  color: var(--color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* backdrop-filter: blur(10px); */
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.500);
+  /* Méthode calc */
+  width: calc(100% - 50px);
+  padding: 20px 20px 6px;
+  box-shadow: -1px -7px 10px 3px black;
+  border-radius: 5px;
+  /* backdropfilter pour mette un flou */
+  backdrop-filter: blur(1px);
+}
